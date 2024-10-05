@@ -358,12 +358,12 @@ span {
 }
 .wrapper{
     display: grid;
-    grid-template-columns: repeat(4,2fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 2rem;
 }
 .forums-items{
     min-height: 550px;
-    max-width: 350px;
+    max-width: 750px;
     background: black;
     border: 3px solid gray;
     border-radius: 2rem;
@@ -390,6 +390,22 @@ span {
 }
 .forums-items{
     font-size: 2rem;
+}
+.projects{
+    padding: 100px 15px;
+    background: var(--second-bg-color);
+}
+.projects-box{
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.projects .subheading{
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 4rem;
 }
 .contact{
     background-color: var(--bg-color);
