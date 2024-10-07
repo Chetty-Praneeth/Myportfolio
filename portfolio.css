@@ -223,10 +223,10 @@ span {
         content: " Mobile App Builder";
     }
     61%, 80% {
-        content: " Backend Developer";
+        content: " #";
     }
     81%, 100% {
-        content: " MongoDB Certified";
+        content: "#";
     }
 }
 @keyframes typing {
@@ -450,7 +450,7 @@ span {
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 .footer .social{
     text-align: center;
