@@ -346,6 +346,7 @@ span {
     flex-direction: column;
 }
 .forums .heading{
+    margin-top: 5px;
     margin-bottom: 5rem;
     font-weight: bold;
     font-size: 8rem;
@@ -391,6 +392,49 @@ span {
 .forums-items{
     font-size: 2rem;
 }
+/* Container for the search bar and icon */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    justify-content: center;
+    
+}
+
+/* Search bar styling */
+.search-bar {
+    width: 60vw;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #000000;
+    border: 1px solid #b3b3b3;
+    font-size: 24px;
+    outline: none;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+/* Search icon styling */
+.search-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #000000;
+    border: 1px solid #b3b3b3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.search-icon img {
+    width: 20px;
+    height: 20px;
+}
 .projects{
     padding: 100px 15px;
     background: var(--second-bg-color);
@@ -402,10 +446,36 @@ span {
     justify-content: center;
     flex-direction: column;
 }
-.projects .subheading{
-    margin-bottom: 3rem;
-    font-weight: bold;
-    font-size: 4rem;
+.projects-layout {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.projects .heading{
+    margin-top: 5px;
+}
+
+.explore-btn {
+    grid-column: 2 / 4;
+    text-align: center;
+}
+
+.explore-btn .btn {
+    width: 15vw;
+    height: 4vw;
+    background-color: #00ffea;
+    color: black;
+    padding: 16px 32px; /* Increased padding to make the button bigger */
+    text-decoration: none;
+    font-size: 20px; /* Increased font size */
+    font-weight: bold; /* Optional: Make it bold */
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 255, 234, 0.6);
+}
+
+.explore-btn .btn:hover {
+    background-color: #00ffea;
+    box-shadow: 0 6px 12px rgba(0, 249, 228, 0.8);
 }
 .contact{
     background-color: var(--bg-color);
