@@ -90,3 +90,42 @@ header {
     color: #fff;
     margin: 0.2rem 0; /* Spacing between each item */
 }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Social Button Style */
+.social-button {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #555555;
+}
+
+/* Add margin to GitHub button to create space */
+.github-button {
+    background-color: #f54b42;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem; /* Adds space between social links and GitHub button */
+}
+
+.github-button:hover {
+    background-color: #c63a2b;
+}
