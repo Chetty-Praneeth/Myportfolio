@@ -214,16 +214,16 @@ span {
 }
 @keyframes words {
     0%, 20% {
-        content: " Frontend Designer";
+        content: " Python Developer ";
     }
     21%, 40% {
-        content: " Web Designer";
+        content: " Web Designer ";
     }
     41%, 60% {
         content: " Mobile App Builder";
     }
     61%, 80% {
-        content: " #";
+        content: "Machine Learning Practitioner";
     }
     81%, 100% {
         content: "#";
