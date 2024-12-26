@@ -334,24 +334,24 @@ span {
     background-color: var(--bg-color);
     width: 50px;
 }
-.forums{
+.societies{
     
     background: var(--bg-color);
 }
-.forums-box{
+.societies-box{
     background-size:cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.forums .heading{
+.societies .heading{
     margin-top: 5px;
     margin-bottom: 5rem;
     font-weight: bold;
     font-size: 8rem;
 }
-.forums-box img{
+.societies-box img{
     width: 25rem;
     border-radius: 50%;
     border: 3px solid var(--text-color);
@@ -362,7 +362,7 @@ span {
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
 }
-.forums-items{
+.societies-items{
     min-height: 550px;
     max-width: 750px;
     background: black;
@@ -380,14 +380,17 @@ span {
     color: white;
     transition: 0.2s ease-in-out;
 }
-.forums-items:hover{
+.societies-items:hover{
     border: 3px solid var(--text-color);
     transform: translateY(-10px)scale(1.03);
     box-shadow: 0 0 25px var(--text-color);
 }
-.forums-items h2{
+.societies-items h2{
     font-size: 3.7rem;
 
+}
+.societies-items p{
+    font-size: 1.7rem;
 }
 .forums-items{
     font-size: 2rem;
