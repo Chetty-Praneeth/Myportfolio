@@ -47,5 +47,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start the typing effect after a short delay
     setTimeout(typeEffect, 500);
 });
+const gridContainer = document.querySelector('.grid-container');
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+
+let currentIndex = 0; // Start with the first set of projects
+const totalSlides = 2; // Two sets of 3 projects (adjust if needed)
+
+// Handle right arrow click
+rightArrow.addEventListener('click', () => {
+    if (currentIndex < totalSlides - 1) {
+        currentIndex++;
+        gridContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+});
+
+// Handle left arrow click
+leftArrow.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        gridContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+});
+
 
 

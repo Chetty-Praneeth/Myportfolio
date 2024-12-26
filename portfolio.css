@@ -220,13 +220,13 @@ span {
         content: " Web Designer ";
     }
     41%, 60% {
-        content: " Mobile App Builder";
+        content: " Mobile App Developer";
     }
     61%, 80% {
         content: "Machine Learning Practitioner";
     }
     81%, 100% {
-        content: "#";
+        content: "Video Editor";
     }
 }
 @keyframes typing {
@@ -408,7 +408,7 @@ span {
     padding: 10px;
     border-radius: 50px;
     background-color: #000000;
-    border: 1px solid #b3b3b3;
+    border: 1px solid #333;
     font-size: 24px;
     outline: none;
     margin-top: 100px;
@@ -416,73 +416,167 @@ span {
     margin-bottom: 30px;
 }
 
-/* Search icon styling */
-.search-icon {
-    width: 60px;
-    height: 60px;
-    background-color: #000000;
-    border: 1px solid #b3b3b3;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin-top: 100px;
-    margin-bottom: 30px;
-}
-
-.search-icon img {
-    width: 20px;
-    height: 20px;
-}
-.search-icon img {
-    transition: opacity 0.3s ease; /* Smooth transition */
-}
-
-.search-icon:hover img {
-    opacity: 0.7; /* Change this value for different hover effects */
-}
-.projects{
-    padding: 100px 15px;
-    background: var(--second-bg-color);
-}
-.projects-box{
-    background-size:cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.projects-layout {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-.projects .heading{
-    margin-top: 5px;
-}
-
-.explore-btn {
-    grid-column: 2 / 4;
+/* Section Styling */
+.projects-section {
+    padding: 20px;
     text-align: center;
+    background-color: var(--bg-color);
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
-.explore-btn .btn {
-    width: 15vw;
-    height: 4vw;
-    background-color: #00ffea;
-    color: black;
-    padding: 16px 32px; /* Increased padding to make the button bigger */
+.section-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Slider Styling */
+.project-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 150px); /* Leave space for heading and button */
+    overflow: hidden;
+}
+
+/* Grid Container */
+.grid-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 2); /* Supports 2 sets of 3 projects */
+}
+
+/* Individual Project Box */
+.project-box {
+    flex: 0 0 calc(33.33% - 20px); /* Each box takes 1/3 of the width */
+    margin: 10px;
+    height: 100%;
+    background: var(--second-bg-color);
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-image {
+    width: 100%;
+    height: 60%; /* Image occupies 60% of the box */
+    object-fit: cover;
+}
+
+.about {
+    padding: 15px;
+}
+
+.about h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffff;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #555;
+}
+/* Hover Effect for Project Box */
+.project-box:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Optional: Change the text color on hover */
+.project-box:hover .about h3 {
+    color: var(--text-color); /* Highlight the title on hover */
+}
+
+.project-box:hover .about p {
+    color: #555; /* Change the description color */
+}
+
+/* Optional: Add a hover effect to the image */
+.project-box:hover .project-image {
+    opacity: 0.9; /* Slightly fade the image */
+    filter: brightness(1.2); /* Brighten the image */
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* View More Button */
+.view-more-btn {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: 10px 30px; /* Adjust padding for reduced width */
+    cursor: pointer;
     text-decoration: none;
-    font-size: 20px; /* Increased font size */
-    font-weight: bold; /* Optional: Make it bold */
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 255, 234, 0.6);
+    text-align: center;
+    width: auto; /* Or set a fixed width: e.g., 150px */
+    margin: 0 auto; /* Center the button horizontally */
+    transition: all 0.3s ease;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 25px var(--main-color);
 }
 
-.explore-btn .btn:hover {
-    background-color: #00ffea;
-    box-shadow: 0 6px 12px rgba(0, 249, 228, 0.8);
+.view-more-btn:hover {
+    transform: scale(1.05);
+    color: var(--bg-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.view-more-btn a:nth-of-type(2) {
+    background-color: black;
+    color: var(--main-color);
+    border: 1.5px solid var(--main-color);
+    box-shadow: 0 0 25px transparent;
+}
+.view-more-btn a:nth-of-type(2):hover {
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+    text-emphasis-color: var(--bg-color);
+    color: black;
+    border: #00ffee;
 }
 .contact{
     background-color: var(--bg-color);
@@ -728,4 +822,14 @@ span {
 
 #menu-icon {
     cursor: pointer;
+}
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box {
+        width: 100%;
+    }
 }
