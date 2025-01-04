@@ -680,25 +680,37 @@ span {
 /*  What i do boxes */
 /* styles.css */
 
-
-.whatidocontainer {
-    display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 20px;
+.whatido {
+    min-height: 100px;
+    margin-bottom: 0; /* Remove margin from section */
 }
 
 .box {
-    background-color: #111; /* Change to match your theme */
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  flex: 1;
-  max-width: 250px; /* Controls the size of the cards */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 0; /* Remove margin from each box */
 }
+
+.whatidocontainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0; /* Remove padding */
+    align-items: flex-start; /* Align items at the top */
+}
+
+
+.box {
+    background-color: #111;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 250px;
+    height: auto; /* Let the box height adjust according to content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 .box:hover {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.4);
