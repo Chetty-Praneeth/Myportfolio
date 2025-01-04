@@ -677,6 +677,57 @@ span {
     font-size: 15px;
     color: white;
 }
+/*  What i do boxes */
+/* styles.css */
+
+
+.whatidocontainer {
+    display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.box {
+    background-color: #111; /* Change to match your theme */
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  max-width: 250px; /* Controls the size of the cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+    transform: translateY(-8px);
+    
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.box h3 {
+    font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: white;
+}
+
+.box p {
+    font-size: 10px;
+    color: #666;
+    margin: 0;
+  }
+
 
 @media screen and (max-width:1285px){
     html{
