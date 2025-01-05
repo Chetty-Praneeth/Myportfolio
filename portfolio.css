@@ -490,14 +490,13 @@ span {
     font-size: 1.2rem;
     color: #555;
 }
-/* Hover Effect for Project Box */
 .project-box:hover {
     transform: scale(1.05); /* Slight zoom effect */
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
-/* Optional: Change the text color on hover */
+
 .project-box:hover .about h3 {
     color: var(--text-color); /* Highlight the title on hover */
 }
@@ -506,10 +505,10 @@ span {
     color: #555; /* Change the description color */
 }
 
-/* Optional: Add a hover effect to the image */
+
 .project-box:hover .project-image {
-    opacity: 0.9; /* Slightly fade the image */
-    filter: brightness(1.2); /* Brighten the image */
+    opacity: 0.9; 
+    filter: brightness(1.2); 
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
@@ -678,7 +677,6 @@ span {
     color: white;
 }
 /*  What i do boxes */
-/* styles.css */
 
 .whatido {
     min-height: 100px;
