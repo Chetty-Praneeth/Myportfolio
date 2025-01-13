@@ -70,26 +70,4 @@ leftArrow.addEventListener('click', () => {
     }
 });
 
-//Contact me validation
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    let formValid = true;
-    const inputs = document.querySelectorAll('#contact-form input, #contact-form textarea');
-    
-    // Check for empty fields
-    inputs.forEach(input => {
-      if (!input.value) {
-        formValid = false;
-        input.style.borderColor = 'red';
-      } else {
-        input.style.borderColor = '';
-      }
-    });
-  
-    if (!formValid) {
-      event.preventDefault();
-      alert("Please fill in all fields.");
-    }
-  });
-  
-
 

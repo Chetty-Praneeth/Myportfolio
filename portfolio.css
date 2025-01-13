@@ -423,7 +423,7 @@ span {
 .projects-section {
     padding: 20px;
     text-align: center;
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
     height: 100vh; /* Full screen height */
     display: flex;
     flex-direction: column;
@@ -581,7 +581,7 @@ span {
     border: #00ffee;
 }
 .contact{
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
 
 }
 .contact h2{
